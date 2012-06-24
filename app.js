@@ -46,6 +46,7 @@ app.get('/', routes.index);
 app.get('/join', routes.form);
 app.post('/join', routes.join);
 app.get('/restTest/:id', routes.restTest);
+app.get('/meetings', routes.meetings);
 app.get('/documents.:format', function(req, res) {
   //var document = new Document(req.body['document']);
   //document.save(function() {
