@@ -47,6 +47,7 @@ app.get('/join', routes.form);
 app.post('/join', routes.join);
 app.get('/restTest/:id', routes.restTest);
 app.get('/meetings', routes.meetings);
+app.post('/auth', routes.auth);
 app.get('/documents.:format', function(req, res) {
   //var document = new Document(req.body['document']);
   //document.save(function() {
@@ -62,6 +63,6 @@ app.get('/documents.:format', function(req, res) {
     }
   //});
 });
-app.listen(process.env.PORT, function(){
+app.listen(3000, function(){
   console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 });
